@@ -17,7 +17,7 @@ const formatNumber = (language, data) => {
 };
 
 const formatDate = (language, data) => {
-	const createDate = (date) => {
+	const createDate = date => {
 		// convert each item to a number
 		const [year, month, day] = date.split('-').map(Number);
 

@@ -6,9 +6,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules src/index.js",
-		"test": "npx mocha test/*.test.js",
-		"test:watch": "npx mocha -w --parallel test/*.test.js",
-		"test:coverage": "npx nyc npx mocha -r reify --parallel test/*.test.js"
+		"test": "npx mocha test/*/*.test.js test/*.test.js",
+		"test:watch": "npx mocha -w --parallel test/*/*.test.js test/*.test.js",
+		"test:coverage": "npx nyc npx mocha -r reify --parallel test/*/*.test.js test/*.test.js"
 	},
 	"keywords": [],
 	"author": "",
